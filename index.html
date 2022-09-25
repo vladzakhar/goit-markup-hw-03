@@ -8,25 +8,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css"/>
   </head>
   <body>
     <header class="header">
+      <div class="container header-container">
       <nav class="main-nav">
-        <a class="body-logo" href="./index.html"> <span class="body-logo-web">Web</span>Studio</a>
-        <ul class="list"> 
-          <li class="list-item">
-            <a class="current" href="./index.html">Студія</a>
+        
+        <ul class="list header-list-nav"> 
+          <li class="list-item ">
+            <a class="body-logo" href="./index.html"> <span class="body-logo-web">Web</span>Studio</a>
           </li>
-          <li class="list-item">
+          <li class="list-item header-list-item">
+            <a class="current link-studio" href="./index.html">Студія</a>
+          </li>
+          <li class="list-item header-list-item">
             <a class="link" href="./portfolio.html">Портфоліо</a>
           </li>
-          <li class="list-item">
-            <a class="link" href="">Контакти</a>
+          <li class="list-item header-list-item">
+            <a class="link link-contact" href="">Контакти</a>
           </li>
         </ul>
       </nav>
-      <ul class="list">
+      <ul class="list header-list">
         <li class="list-item">
           <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
@@ -34,17 +39,19 @@
           <a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
+    </div>
     </header>
     <main>
       <!--Main section-->
-      <section class="main-section">
-        <div class="main-group">
+      <section class="main-section section">
+        <div class="container main-conteiner">
           <h1 class="main-title"> Ефективні рішення для вашого бізнесу </h1>
           <button class="main-btn" type="button">Замовити послугу</button>
         </div>
       </section> 
     <!--Features section-->
-    <section class="features-section">
+    <section class="features-section section">
+      <div class="container">
       <h2 class="visually-hidden">Наші особливості</h2>
       <ul class="features-list">
         <li class="features-list-item">
@@ -70,11 +77,13 @@
           </p>
         </li>
       </ul>
+    </div>
     </section>
     <!--Чим ми займаємося business section-->
-    <section class="business-section">
+    <section class="business-section section">
+      <div class="container business-container">
       <h2 class="title-description">Чим ми займаємося</h2>
-      <ul class="list">
+      <ul class="list business-list">
         <li class="list-item">
             <img class="img" src="./images/What_we_do/box-1.jpg" alt="box-1"
             width="370" height="294">
@@ -88,36 +97,40 @@
             width="370" height="294">
           </li>
       </ul>
+    </div>
     </section>
     <!--Наша команда team section-->
-    <section class="team-section">
+    <section class="team-section section">
+      <div class="container team-section-conteiner">
         <h2 class="title-description">Наша команда</h2>
-<ul class="list">
+<ul class="list team-list">
   <li class="list-item">
-      <img src="./images/Team/img-1.jpg" alt="Product Designer photo" class="img" width="270" height="260">
+      <img src="./images/Team/img-1.jpg" alt="Product Designer photo" class="img img-team" width="270" height="260">
       <h3 class="team-section-title">Ігор Дем'яненко</h3> 
       <p class="team-section-undertitle">Product Designer</p>
   </li>
   <li class="list-item">
-      <img src="./images/Team/img-2.jpg" alt="Frontend Developer photo" class="img" width="270" height="260">
+      <img src="./images/Team/img-2.jpg" alt="Frontend Developer photo" class="img img-team" width="270" height="260">
       <h3 class="team-section-title">Ольга Рєпіна</h3>
       <p class="team-section-undertitle">Frontend Developer</p>
   </li>
   <li class="list-item">
-      <img src="./images/Team/img-3.jpg" alt="Marketing photo" class="img" width="270" height="260">
+      <img src="./images/Team/img-3.jpg" alt="Marketing photo" class="img img-team" width="270" height="260">
       <h3 class="team-section-title">Микола Тарасов</h3> 
       <p class="team-section-undertitle">Marketing</p>
    </li>
   <li class="list-item">
-      <img src="./images/Team/img-4.jpg" alt="UI Designer photo" class="img" width="270" height="260">
+      <img src="./images/Team/img-4.jpg" alt="UI Designer photo" class="img img-team" width="270" height="260">
       <h3 class="team-section-title">Михайло Єрмаков</h3> 
       <p class="team-section-undertitle">UI Designer</p>
   </li>
 </ul>
+</div>
     </section>
     </main>
     <footer class="footer">
-      <a class="footer-logo" href="./index.html"> <span class="logo-web">Web</span>Studio</a>
+      <div class="container container-footer">
+        <a class="footer-logo" href="./index.html"> <span class="logo-web">Web</span>Studio</a>
       <address>
       <ul class="footer-list">
         <li class="footer-list-item">
@@ -131,6 +144,7 @@
         </li>
       </ul>
     </address>
+    </div>
     </footer>
   </body>
 </html>
