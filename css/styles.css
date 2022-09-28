@@ -61,7 +61,7 @@ img {
   }
 .link,.body-logo, .footer-logo, .mail,.tel,.current {
     text-decoration: none ;
-    currentColor:var(--light-txt-cl);
+    color: currentColor;
 }
 
 /*Header*/
@@ -382,15 +382,12 @@ img {
     .projects-class {
         text-decoration: none; 
     }
-    .cards-list-item:{
-        background-color: var(--main-bg-cl);
-    }
     .projects-description{
         padding: 20px 24px;
         border-style: solid;
         border-color: #EEEEEE;
         border-width: 0px 1px 1px 1px;
-        background-color: var(--main-bg-cl);
+        background-color:var(--main-bg-cl)
     }
     .projects-title {
         font-weight: 700;
